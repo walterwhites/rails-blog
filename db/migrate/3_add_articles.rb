@@ -1,5 +1,8 @@
 class AddArticles < ActiveRecord::Migration[5.2]
   def self.up
+      Category.create :title => "business", :id => 0
+      Category.create :title => "nature", :id => 1
+      Category.create :title => "computer sience", :id => 3
       Article.create :title => "article 1", :content => "description", :category_id => 1
       Article.create :title => "article 2", :content => "description", :category_id => 0
       Article.create :title => "article 3", :content => "description", :category_id => 0
