@@ -1,0 +1,15 @@
+<h1> Information about article </h1>
+<p><%= @article.title_was %></p>
+<p>Description: <%= @article.content %></p>
+
+<%= form_tag "/articles/#{@article.id}", method: "patch" do %>
+  <input type="text" name="title" />
+<%= @article.errors[:title].first %>
+<input type="submit" value="Modify the article" />
+<% end %>
+
+<%= form_tag "/articles/#{@article.id}", method: "delete" do %>
+<input type="submit" value="Delete the article" />
+<% end %>
+
+<a href='/articles'>Go to the list</a>
