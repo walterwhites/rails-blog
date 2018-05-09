@@ -1,12 +1,15 @@
 <p>Voici tous les article: </p>
+
 <% @all_articles.each do |article| %>
 <p>
-<a href='/articles/<%= article.id %>'><%= article.title %></a>
+<%= article_link article %>
     <% if article.category %>
     (<%= article.category.title   %>)
 <% end %>
 </p>
 <% end %>
+
+<%= paginate @all_articles %>
 
 
 <%= form_tag "/articles", method: "post" do %>
