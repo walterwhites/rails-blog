@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 
@@ -26,4 +25,3 @@ Things you may want to cover:
 * ...
 =======
 # rails-blog
->>>>>>> c39f5c2ec2aaa5d9c71ac61296717d617c8f66c5
